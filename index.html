@@ -1,1 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EliteWeb – Business Growth Partner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --main:#2563eb;
+      --dark:#0f172a;
+      --light:#f8fafc;
+    }
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Poppins,Arial;
+    }
+    body{
+      background:var(--light);
+      color:#111;
+      scroll-behavior:smooth;
+    }
+
+    /* NAV */
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:#fff;
+      display:flex;
+      justify-content:space-between;
+      padding:15px 30px;
+      box-shadow:0 4px 20px rgba(0,0,0,.08);
+      z-index:1000;
+    }
+    nav b{color:var(--main);font-size:20px}
+    nav a{
+      margin-left:20px;
+      text-decoration:none;
+      color:#333;
+      font-weight:500;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:120px 20px;
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+      color:#fff;
+    }
+    .hero h1{font-size:46px;max-width:800px}
+    .hero p{margin:20px auto;font-size:18px;max-width:600px}
+    .hero button{
+      padding:15px 30px;
+      border:none;
+      border-radius:8px;
+      font-size:16px;
+      background:#fff;
+      color:#2563eb;
+      cursor:pointer;
+    }
+
+    /* SECTIONS */
+    section{
+      padding:80px 20px;
+      max-width:1200px;
+      margin:auto;
+    }
+    h2{
+      text-align:center;
+      font-size:34px;
+      margin-bottom:50px;
+    }
+
+    /* SERVICES */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:30px;
+    }
+    .box{
+      background:#fff;
+      padding:30px;
+      border-radius:14px;
+      box-shadow:0 20px 40px rgba(0,0,0,.08);
+      transition:.3s;
+    }
+    .box:hover{transform:translateY(-8px)}
+    .box h3{margin-bottom:10px}
+
+    /* STATS */
+    .stats{
+      background:var(--dark);
+      color:#fff;
+      border-radius:20px;
+      padding:60px 20px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:30px;
+      text-align:center;
+    }
+    .stats h1{font-size:42px;color:#38bdf8}
+
+    /* PRICING */
+    .price{text-align:center}
+    .price h1{color:var(--main);font-size:42px}
+    .price button{
+      margin-top:15px;
+      padding:12px 22px;
+      border:none;
+      border-radius:8px;
+      background:var(--main);
+      color:#fff;
+      cursor:pointer;
+    }
+
+    /* CONTACT */
+    form{
+      max-width:500px;
+      margin:auto;
+      display:flex;
+      flex-direction:column;
+      gap:15px;
+    }
+    input,textarea{
+      padding:14px;
+      border-radius:8px;
+      border:1px solid #ccc;
+    }
+    form button{
+      background:var(--main);
+      color:#fff;
+      padding:14px;
+      border:none;
+      border-radius:8px;
+    }
+
+    /* FOOTER */
+    footer{
+      background:#020617;
+      color:#aaa;
+      text-align:center;
+      padding:25px;
+    }
+
+    /* WHATSAPP */
+    .whatsapp{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      background:#25d366;
+      color:#fff;
+      padding:14px 18px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:600;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <b>EliteWeb</b>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div>
+    <h1>We Build Websites That Convert Visitors Into Customers</h1>
+    <p>High-quality business websites for startups, shops & brands</p>
+    <button onclick="location.href='#contact'">Start Your Project</button>
+  </div>
+</div>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="box">
+      <h3>💻 Website Design</h3>
+      <p>Modern, fast & responsive design.</p>
+    </div>
+    <div class="box">
+      <h3>📈 Business Growth</h3>
+      <p>Websites focused on sales & trust.</p>
+    </div>
+    <div class="box">
+      <h3>⚡ Fast Delivery</h3>
+      <p>Project delivered within 24–48 hrs.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="stats">
+    <div><h1>150+</h1><p>Clients</p></div>
+    <div><h1>99%</h1><p>Satisfaction</p></div>
+    <div><h1>24/7</h1><p>Support</p></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Pricing Plans</h2>
+  <div class="grid">
+    <div class="box price">
+      <h3>Starter</h3>
+      <h1>$49</h1>
+      <button>Choose</button>
+    </div>
+    <div class="box price">
+      <h3>Business</h3>
+      <h1>$99</h1>
+      <button>Choose</button>
+    </div>
+    <div class="box price">
+      <h3>Premium</h3>
+      <h1>$199</h1>
+      <button>Choose</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="send(event)">
+    <input placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="4" placeholder="Message"></textarea>
+    <button>Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 EliteWeb | Business Website Experts
+</footer>
+
+<a class="whatsapp" href="https://wa.me/9180221324" target="_blank">
+  WhatsApp Us
+</a>
+
+<script>
+function send(e){
+  e.preventDefault();
+  alert("Thank you! We will contact you soon.");
+}
+</script>
+
+</body>
+</html>
